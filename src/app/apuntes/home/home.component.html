@@ -1,0 +1,36 @@
+<div fxFlex="100" fxLayout="column">
+  <div 
+    class="colorfondo"
+    fxFlex="100" 
+   >
+    <app-cabecera></app-cabecera>
+  </div>
+
+  <div
+    fxFlex="100"
+    fxLayout="row"
+    class="homediv"
+    fxLayoutGap="16px"
+    fxLayoutAlign="center center"
+  >
+    <mat-card fxFlex="10">
+      <mat-card-content>
+        <img src="./../../../assets/listado.png" alt="" />
+      </mat-card-content>
+      <button mat-flat-button (click)="listado()">LISTADO</button>
+    </mat-card>
+    <mat-card fxFlex="10">
+      <mat-card-content>
+        <img src="./../../../assets/agregar.jpg" alt="" />
+      </mat-card-content>
+      <button mat-flat-button (click)="agregar()">AGREGAR</button>
+    </mat-card>
+    <mat-card fxFlex="10">
+      <mat-card-content>
+        <img src="./../../../assets/listado.png" alt="" />
+      </mat-card-content>
+      <button mat-flat-button>LISTADO</button>
+    </mat-card>
+  </div>
+  <router-outlet></router-outlet>
+</div>

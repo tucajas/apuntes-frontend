@@ -1,0 +1,14 @@
+.formulario {
+    /* text-align: center; */
+    padding-top: 100px;
+    padding-left: 550px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .contenedor {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; /* Centrado vertical */
+  }
+  

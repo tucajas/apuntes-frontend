@@ -1,0 +1,16 @@
+.homediv{
+    width: 100%;
+    
+    background-color:rgb(255, 255, 255);
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+   
+}
+img{
+    width: 100%;
+    align-items: center;
+}
+.colorfondo{
+    background-color: blueviolet;
+}
