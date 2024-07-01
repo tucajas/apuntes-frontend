@@ -23,4 +23,10 @@ export default class HomeComponent {
   agregar(){
     this._router.navigate(['agregar']);
   }
+  login(){
+    this._router.navigate(['login']);
+  }
+  registrar(){
+    this._router.navigate(['registrar']);
+  }
 }

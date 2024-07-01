@@ -29,7 +29,13 @@
       <mat-card-content>
         <img src="./../../../assets/listado.png" alt="" />
       </mat-card-content>
-      <button mat-flat-button>LISTADO</button>
+      <button mat-flat-button (click)="login()">login</button>
+    </mat-card>
+    <mat-card fxFlex="10">
+      <mat-card-content>
+        <img src="./../../../assets/listado.png" alt="" />
+      </mat-card-content>
+      <button mat-flat-button (click)="registrar()">registrar</button>
     </mat-card>
   </div>
   <router-outlet></router-outlet>

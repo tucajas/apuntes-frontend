@@ -1,14 +1,45 @@
+.contenedor {
+  width: 100%; /* Ocupar todo el ancho disponible */
+  height: 100vh; /* Ocupar toda la altura de la ventana */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+  padding: 20px; /* Espacio interno alrededor del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .formulario {
-    /* text-align: center; */
+  width: 100%; /* Ocupar todo el ancho disponible */
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar horizontalmente el formulario */
+  padding: 20px; /* Espacio interno alrededor del formulario */
+  /*background-color: rgb(155, 17, 17); /* Color de fondo del formulario */
+}
+
+
+.tamaño {
+  width: 100%; /* Ancho completo del campo de entrada */
+  padding: 10px; /* Espacio interno alrededor del texto */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+
+
+
+/* .formulario {
+    text-align: center; 
     padding-top: 100px;
-    padding-left: 550px;
+    padding-left: center;
     width: 100%;
-    max-width: 600px;
+    /* max-width: 900px; 
   }
   .contenedor {
     display: flex;
-    /* flex-direction: column; */
+    /* flex-direction: column; 
     justify-content: center;
-    align-items: center; /* Centrado vertical */
+    align-items: center; /* Centrado vertical 
   }
   
+  .tamaño{
+    width: 600px;
+  } */

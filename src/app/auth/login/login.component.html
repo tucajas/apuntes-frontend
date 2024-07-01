@@ -1,0 +1,23 @@
+<app-cabecera></app-cabecera>
+<section fxLayoutAlign="center">
+  <mat-card>
+    <!-- pongo fxLayout="column" para que se vayan poniendo uno debajo del otro los elementos hijos del formulario -->
+    <!-- pongo fxLayoutAlign="center center" para que los elementos esten alineados -->
+    <!-- pongo fxLayoutGap para separar los elementos -->
+    <!-- cuando pongo f adentro es porque mando el objeto formulario  -->
+    <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="loginUsuario(f)">
+    
+        <mat-form-field>
+            <mat-label>Ingrese Email</mat-label>
+            <input type="email" matInput placeholder="email" name="email" ngModel required>
+            <mat-error>debe ingresar un email</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Ingrese password</mat-label>
+            <input type="password" matInput placeholder="password" name="password" ngModel required>
+            <mat-error>debe ingresar un password</mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </form>
+  </mat-card>
+</section>

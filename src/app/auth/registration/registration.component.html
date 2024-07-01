@@ -1,0 +1,105 @@
+<app-cabecera></app-cabecera>
+<section fxLayoutAlign="center">
+  <mat-card>
+    <!-- pongo fxLayout="column" para que se vayan poniendo uno debajo del otro los elementos hijos del formulario -->
+    <!-- pongo fxLayoutAlign="center center" para que los elementos esten alineados -->
+    <!-- pongo fxLayoutGap para separar los elementos -->
+    <!-- cuando pongo f adentro es porque mando el objeto formulario  -->
+    <form
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      #f="ngForm"
+      (ngSubmit)="registrarUsuario(f)"
+    >
+      <mat-form-field>
+        <mat-label>Ingrese nombre</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="nombre"
+          name="nombre"
+          ngModel
+          required
+        />
+        <mat-error>debe ingresar un nombre</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingrese apellido</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="apellido"
+          name="apellido"
+          ngModel
+          required
+        />
+        <mat-error>debe ingresar un apellido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingrese user</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="user"
+          name="user"
+          ngModel
+          required
+        />
+        <mat-error>debe ingresar un user</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingrese telefono</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="telefono"
+          name="telefono"
+          ngModel
+          required
+        />
+        <mat-error>debe ingresar un telefono</mat-error>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>Ingrese Email</mat-label>
+        <input
+          type="email"
+          matInput
+          placeholder="email"
+          name="email"
+          ngModel
+          required
+        />
+        <mat-error>debe ingresar un email</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingrese password</mat-label>
+        <input
+          type="password"
+          matInput
+          placeholder="password"
+          name="password"
+          ngModel
+          required
+          minlength="4"
+        />
+        <mat-error>debe ingresar 4 digitos como minimo</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>confirme password</mat-label>
+        <input
+          type="password"
+          matInput
+          placeholder="confirme password"
+          name="confirmepassword"
+          ngModel
+          required
+          minlength="4"
+        />
+        <mat-error>debe ingresar 4 digitos como minimo</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </form>
+  </mat-card>
+</section>

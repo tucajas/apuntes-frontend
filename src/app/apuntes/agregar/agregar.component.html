@@ -1,5 +1,32 @@
 <app-cabecera></app-cabecera>
-<div class="contenedor">
+<div class="contenedor" fxLayoutAlign="center center">
+  <div class="formulario">
+    <div fxLayout="column">
+      <div fxLayoutAlign="center center" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Descripción</mat-label>
+          <input matInput type="text" [(ngModel)]="Apunte.descripcion" />
+        </mat-form-field>
+      </div>
+      <div fxLayoutAlign="center center" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Texto</mat-label>
+          <input class="tamaño" matInput type="text" [(ngModel)]="Apunte.texto" />
+        </mat-form-field>
+      </div>
+      <div fxLayoutAlign="center center" fxLayout="row">
+        <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+        @if(Apunte.id){
+  
+        <button class="btn btn-danger" (click)="eliminar()" >borrar</button>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="contenedor">
   <div class="formulario" fxFlex="100" fxLayout="column">
     <div fxLayout="row">
      
@@ -8,10 +35,10 @@
           <input matInput type="text" [(ngModel)]="Apunte.descripcion" />
         </mat-form-field>
       </div>
-      <div fxLayout="row">
+      <div fxLayout="row" >
         <mat-form-field>
           <mat-label>texto</mat-label>
-          <input matInput type="text" [(ngModel)]="Apunte.texto" />
+          <input class="tamaño"  matInput type="text" [(ngModel)]="Apunte.texto" />
         </mat-form-field>
       </div>
      
@@ -25,4 +52,4 @@
     </div>
     <div class="formulario" fxFlex="100" fxLayout="column"></div>
   </div>
-  
+   -->
