@@ -9,11 +9,11 @@ import { Apunte } from './apunte-interface';
 export default class ApunteService {
 
   private _httpClient = inject(HttpClient);
-  private urlBase:string = 'http://tuk23.pythonanywhere.com/apunte';
-  private urlBase2:string = 'http://tuk23.pythonanywhere.com';
+  private urlBase:string = 'https://tuk23.pythonanywhere.com/apunte';
+  private urlBase2:string = 'https://tuk23.pythonanywhere.com';
  
   getApuntes ():Observable<Apunte[]>{
-    return this._httpClient.get<Apunte[]>(`http://tuk23.pythonanywhere.com/apunte/`);
+    return this._httpClient.get<Apunte[]>(`https://tuk23.pythonanywhere.com/apunte/`);
 
   }
 
