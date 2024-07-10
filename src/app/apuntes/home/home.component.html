@@ -9,6 +9,40 @@
   <div
   fxFlex="100"
   fxLayout="row wrap"
+  fxLayoutAlign="start center"
+  fxLayoutGap="16px"
+  class="homediv"
+>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-md="45" fxFlex="100">
+    <mat-card-content style="text-align: center;">
+      <img src="./../../../assets/listado.png" alt="" style="max-width: 80px;" />
+    </mat-card-content>
+    <button mat-flat-button color="primary" style="font-size: 16px; padding: 10px;" (click)="listado()">LISTADO</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-md="45" fxFlex="100">
+    <mat-card-content style="text-align: center;">
+      <img src="./../../../assets/agregar.jpg" alt="" style="max-width: 80px;" />
+    </mat-card-content>
+    <button mat-flat-button color="primary" style="font-size: 16px; padding: 10px;" (click)="agregar()">AGREGAR</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-md="45" fxFlex="100">
+    <mat-card-content style="text-align: center;">
+      <img src="./../../../assets/listado.png" alt="" style="max-width: 80px;" />
+    </mat-card-content>
+    <button mat-flat-button color="primary" style="font-size: 16px; padding: 10px;" (click)="login()">login</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-md="45" fxFlex="100">
+    <mat-card-content style="text-align: center;">
+      <img src="./../../../assets/listado.png" alt="" style="max-width: 80px;" />
+    </mat-card-content>
+    <button mat-flat-button color="primary" style="font-size: 16px; padding: 10px;" (click)="registrar()">registrar</button>
+  </mat-card>
+</div>
+
+
+  <!-- <div
+  fxFlex="100"
+  fxLayout="row wrap"
   fxLayoutGap="16px"
   fxLayoutAlign="center center"
   class="homediv"
@@ -37,7 +71,7 @@
     </mat-card-content>
     <button mat-flat-button color="primary" style="font-size: 16px; padding: 10px;" (click)="registrar()">registrar</button>
   </mat-card>
-</div>
+</div> -->
 
   <!-- <div
   fxFlex="100"
