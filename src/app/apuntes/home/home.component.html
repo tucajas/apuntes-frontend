@@ -7,6 +7,39 @@
   </div>
 
   <div
+  fxFlex="100"
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  fxLayoutAlign="center center"
+  class="homediv"
+>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-sm="45">
+    <mat-card-content>
+      <img src="./../../../assets/listado.png" alt="" />
+    </mat-card-content>
+    <button mat-flat-button (click)="listado()">LISTADO</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-sm="45">
+    <mat-card-content>
+      <img src="./../../../assets/agregar.jpg" alt="" />
+    </mat-card-content>
+    <button mat-flat-button (click)="agregar()">AGREGAR</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-sm="45">
+    <mat-card-content>
+      <img src="./../../../assets/listado.png" alt="" />
+    </mat-card-content>
+    <button mat-flat-button (click)="login()">login</button>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="20" fxFlex.lt-sm="45">
+    <mat-card-content>
+      <img src="./../../../assets/listado.png" alt="" />
+    </mat-card-content>
+    <button mat-flat-button (click)="registrar()">registrar</button>
+  </mat-card>
+</div>
+
+  <!-- <div
     fxFlex="100"
     fxLayout="row"
     class="homediv"
@@ -37,6 +70,6 @@
       </mat-card-content>
       <button mat-flat-button (click)="registrar()">registrar</button>
     </mat-card>
-  </div>
+  </div> -->
   <router-outlet></router-outlet>
 </div>
